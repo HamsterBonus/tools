@@ -23,14 +23,6 @@
 						<maxmem>1024m</maxmem>
 					</configuration>
 				</plugin>
-				<plugin>
-					<artifactId>maven-surefire-plugin</artifactId>
-					<configuration>
-						<systemPropertyVariables>
-							<log4j.configuration>surefire-log4j.xml</log4j.configuration>
-						</systemPropertyVariables>
-					</configuration>
-				</plugin>
 			</plugins>
 		</pluginManagement>
 	</build>

@@ -52,6 +52,9 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<configuration>
 					<skipTests>false</skipTests>
+					<systemPropertyVariables>
+						<log4j.configuration>surefire-log4j.xml</log4j.configuration>
+					</systemPropertyVariables>
 					<excludes>
 						<exclude>**/*IntegrationTest.java</exclude>
 					</excludes>
