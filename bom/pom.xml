@@ -11,6 +11,7 @@
 
 	<properties>
 		<aspectj.version>1.7.4</aspectj.version>
+		<hamster.core.version>0.0.1-SNAPSHOT</hamster.core.version>
 	</properties>
 
 	<profiles>
@@ -86,6 +87,11 @@
 				<scope>import</scope>
 			</dependency>
 			<dependency>
+				<groupId>org.springframework.data</groupId>
+				<artifactId>spring-data-commons-core</artifactId>
+				<version>1.4.1.RELEASE</version>
+			</dependency>
+			<dependency>
 				<groupId>org.aspectj</groupId>
 				<artifactId>aspectjrt</artifactId>
 				<version>${aspectj.version}</version>
@@ -123,17 +129,12 @@
 			<dependency>
 				<groupId>hamster.bonus</groupId>
 				<artifactId>core-common</artifactId>
-				<version>${project.version}</version>
+				<version>${hamster.core.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>hamster.bonus</groupId>
 				<artifactId>core-user</artifactId>
-				<version>${project.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.data</groupId>
-				<artifactId>spring-data-commons-core</artifactId>
-				<version>1.4.1.RELEASE</version>
+				<version>${hamster.core.version}</version>
 			</dependency>
 
 		</dependencies>
