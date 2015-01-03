@@ -55,9 +55,6 @@
 					<systemPropertyVariables>
 						<log4j.configuration>surefire-log4j.xml</log4j.configuration>
 					</systemPropertyVariables>
-					<excludes>
-						<exclude>**/*IntegrationTest.java</exclude>
-					</excludes>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -71,11 +68,9 @@
 						</goals>
 					</execution>
 				</executions>
-				<configuration>
-					<includes>
-						<include>**/*IntegrationTest.java</include>
-					</includes>
-				</configuration>
+                <configuration>
+                    <skipTests>true</skipTests>
+                </configuration>
 			</plugin>
 		</plugins>
 	</build>
