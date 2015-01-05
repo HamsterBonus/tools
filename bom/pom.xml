@@ -125,7 +125,7 @@
 				<version>1.6</version>
 			</dependency>
 			<dependency>
-				<groupId>hamster.bonus</groupId>
+				<groupId>hamster</groupId>
 				<artifactId>core-common</artifactId>
 				<version>${hamster.core.version}</version>
 			</dependency>
